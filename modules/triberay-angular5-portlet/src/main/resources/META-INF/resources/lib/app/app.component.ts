@@ -1,32 +1,15 @@
-import { Component } from '@angular/core';
-
-export class Hero {
-    id: number;
-    name: string;
-}
+import {Component} from '@angular/core';
+import {Hero} from "../model/hero";
 
 @Component({
-    template: `
-    <h1>{{title}}</h1>
-    <h2>{{hero.name}} details!</h2>
-    <div><label>id: </label>{{hero.id}}</div>
-    <div>
-      <label>name: </label>
-      <input [(ngModel)]="hero.name" placeholder="name">
-    </div>
-    `,
+    templateUrl: '/o/triberay-angular5-portlet/lib/app/app.html'
 })
 export class AppComponent {
     constructor() {}
 
-    title = 'Welcome!';
-    /*hero: Hero;
-    public ngOnInit() {
-        this.portletHeroLoader.getHero().subscribe((hero: Hero) => this.hero);
-    }*/
-
+    title = 'Hello World!';
     hero: Hero = {
         id: 1,
-        name: 'Angular 5 Sample',
+        name: 'Superman'
     };
 }
