@@ -1,0 +1,11 @@
+Bundle-Name: Triberay Angular5 Sample portlet
+Bundle-SymbolicName: com.triberay.angular5.sample
+Bundle-Version: 1.0.0
+Export-Package: com.triberay.angular5.sample.constants
+Web-ContextPath: /triberay-angular5-portlet
+
+-jsp: *.jsp,*.jspf
+-metatype: *
+-plugin.bundle: com.liferay.ant.bnd.resource.bundle.ResourceBundleLoaderAnalyzerPlugin
+-plugin.jsp: com.liferay.ant.bnd.jsp.JspAnalyzerPlugin
+-sources: true
